@@ -1,0 +1,15 @@
+$Roboto: ('Black', 900), ('Bold', 700), ('Medium', 500), ('Light', 300), ('Regular', 400) ;
+
+@each $name, $weight in $Roboto {
+  @font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-#{$name}.woff2);
+    font-weight: $weight;
+  }
+}
+
+@font-face {
+  font-family: "UniSans";
+  src: url(../fonts/UniSans/UniSansHeavyCAPS.woff2);
+  font-weight: 900;
+}
